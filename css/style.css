@@ -184,6 +184,21 @@ color: var(--hover-focus);
     overflow: hidden;
     }
 
+    .antenna {
+    display: inline;
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #8E8F99;
+    fill:#2E2F42;
+    margin: 0 auto;
+    }
+
+    .antenna:hover {
+    fill: #4D5AE5;
+    }
+
 .goals-list {
     display: flex;
     gap: 24px;
