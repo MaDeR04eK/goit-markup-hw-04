@@ -295,6 +295,10 @@ color: var(--hover-focus);
     background-color: #404bbf;
 }
 
+.social-net-icon {
+    fill: #f4f4fd;
+}
+
 .section-team{
     background-color: #f4f4fd;
     padding: 120px 0;
