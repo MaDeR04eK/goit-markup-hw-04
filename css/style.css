@@ -8,6 +8,9 @@
 .header {
     color: var(--main-color-light);
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 body {
@@ -71,6 +74,36 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-left: 76px;
 }
 
+.nav-link-studio {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--hover-focus);
+    padding: 24px 0 28px;
+}
+
+.nav-link-studio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 48px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-studio:hover {
+    color: var(--hover-focus);
+}
+
+.nav-link-studio:focus {
+    color: var(--hover-focus);
+}
+
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -82,8 +115,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .nav-link:hover {
     color: var(--hover-focus);
-    border-bottom: 4px solid #404BBF;
-    border-radius: 2px;
 }
 
 .nav-link:focus {
@@ -103,6 +134,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .tel-mail {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -123,9 +155,11 @@ color: var(--hover-focus);
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(/images/bg-section-one.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto auto;
+    background-size: cover;
     padding: 188px 0;
     flex-shrink: 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .main-title{
@@ -139,7 +173,6 @@ color: var(--hover-focus);
 }
 
 .button-primary{
-    background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -154,9 +187,8 @@ color: var(--hover-focus);
     background-color: var(--logo-button-color);
     border-radius: 4px;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 48px;
+    margin: 48px auto 0 auto;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary:hover{
