@@ -189,7 +189,7 @@ color: var(--hover-focus);
     border-radius: 4px;
     cursor: pointer;
     margin: 48px auto 0 auto;
-    transition: backgroung-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary:hover{
@@ -389,6 +389,18 @@ margin-bottom: 72px;
     padding: 100px 0;
 }
 
+.container-footer {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+.container-logo {
+margin-right: 120px;
+}
+
 .logo-link-footer {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -411,4 +423,14 @@ margin-bottom: 72px;
     letter-spacing: 0.02em;
     max-width: 264px;
     margin: 0;
+}
+
+.text-social_media {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: var(--main-color-light);
+    margin-bottom: 16px;
 }
