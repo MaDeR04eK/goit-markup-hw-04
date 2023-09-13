@@ -363,6 +363,7 @@ margin-bottom: 72px;
 
 .list-item-portfolio:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
 .change-image {
@@ -385,9 +386,8 @@ margin-bottom: 72px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.change-text-portfolio:hover {
-    cursor: pointer;
-    transform: translateY(0%);
+.list-item-portfolio:hover .change-text-portfolio {
+transform: translateY(0%);
 }
 
 .list-item-container {
